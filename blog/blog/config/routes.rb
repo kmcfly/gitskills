@@ -1,9 +1,16 @@
 Rails.application.routes.draw do
 
-  get 'student/index'
+  get 'home/index'
 
+  devise_for :users
+  get 'student/index'
+  resources :students, only: [:create] do
+    collection do
+      post :evaluation
+    end
+  end
   get 'login/index'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-	root to: 'login#index'
+	root to: 'home#index'
 end

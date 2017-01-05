@@ -1,0 +1,59 @@
+.panel {
+  .paner-body {
+    padding: 15px;
+  }
+}
+input.file-window[type='file']{
+  display: none;
+}
+.margin-bottom-lg {
+  margin-bottom: 40px;
+}
+
+.margin-top-lg {
+  margin-top: 80px;
+}
+
+.padding-lg {
+  padding: 20px 0 50px 0;
+}
+.bank_img {
+  padding: 2px 40px;
+}
+.pre_tips_wrap {
+  .modal.fade {
+    background: #7d7c7c;
+  }
+}
+
+.survey-btn {
+  padding: 10px 2px;
+}
+
+.light-gray-color {
+  color: #a5a2a2;
+}
+
+[title='required'] {
+  color: red;
+}
+
+.word_break {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+body {
+  font-size: 16px;
+
+  table {
+    td {
+      max-width: 200px;
+      word-wrap: break-word;
+      white-space: pre-wrap;
+      word-break: break-word;
+      line-height: 1.5;
+    }
+  }
+}

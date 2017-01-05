@@ -34,6 +34,13 @@ gem 'jbuilder', '~> 2.5'
 gem 'mysql2'
 gem 'pg'
 gem 'slim-rails'
+#用户登录
+gem 'devise', '>= 3.5.1'
+gem 'devise_invitable'
+gem 'devise-async'
+gem 'bootstrap-sass'
+gem 'simple_form'
+gem 'font-awesome-sass'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

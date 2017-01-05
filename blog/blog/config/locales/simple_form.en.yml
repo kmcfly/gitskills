@@ -1,0 +1,106 @@
+en:
+  simple_form:
+    "yes": '是'
+    "no": '否'
+    required:
+      text: 'required'
+      mark: '*'
+      # You can uncomment the line below if you need to overwrite the whole required html.
+      # When using html, text and mark won't be used.
+      # html: '<abbr title="required">*</abbr>'
+    error_notification:
+      default_message: "出现以下问题, 请检查:"
+    labels:
+      defaults:
+      student:
+        name: 名称
+        admission_ticket: 准考证号
+      section:
+        name: 名称
+        remark: 备注
+        course: 课程
+      questionnaire:
+        name: 问卷名称
+        remark: 问卷介绍
+        questionnaire_type: 问卷方向
+        state: 状态
+        question_banks: 选题
+      examination:
+        section: 课程章节
+        questionnaires: '选择问卷'
+        roles: 关联角色
+        name: 试卷名称
+        remark: 试卷介绍
+        test_paper_type: 试卷方向
+        time_flag: 是否计时
+        duration: 答题时间
+        state: 状态
+        is_out: 分配类型
+        pre_tips: 答题须知
+        after_tips: 完成提示
+      user_group:
+        name: 名称
+      course:
+        name: 名称
+        remark: 备注
+      system:
+        name: 配置名称
+        content: 配置参数
+        remark: 备注
+      title_type:
+        name: 名称
+        remark: 备注
+      questionnaire_type:
+        name: 名称
+        remark: 备注
+      test_paper_type:
+        name: 名称
+        remark: 备注
+      question_type:
+        name: 名称
+        input_type: 题型
+        remark: 备注
+      role:
+        name: 角色名称
+        role_resources: 权限资源
+      user:
+        roles: 角色
+        user_group: 用户组
+        email: '邮箱'
+        realname: 真实姓名
+        phone: 手机号
+        state: 是否可用
+        current_password: '当前密码'
+        password_confirmation: '确认密码'
+        username: '用户名'
+        password: '密码'
+        remember_me: '记住我'
+      channel:
+        edit:
+          name: '分校名称'
+          remark: '备注'
+        new:
+          name: '分校名称'
+          remark: '备注'
+    hints:
+      defaults:
+    prompts:
+    # Examples
+    # labels:
+    #   defaults:
+    #     password: 'Password'
+    #   user:
+    #     new:
+    #       email: 'E-mail to sign in.'
+    #     edit:
+    #       email: 'E-mail.'
+    # hints:
+    #   defaults:
+    #     username: 'User name to sign in.'
+    #     password: 'No special characters, please.'
+    # include_blanks:
+    #   defaults:
+    #     age: 'Rather not say'
+    # prompts:
+    #   defaults:
+    #     age: 'Select your age'
