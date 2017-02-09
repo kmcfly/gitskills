@@ -1,4 +1,11 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import 'bootstrap-datepicker3';
 @import 'public';
-
+@import 'simditor';
+@import 'questionnaire';
+@import 'admin_navigation';
+@import 'examination';
+@import 'countdown';
+@import 'result';
+@import 'student';

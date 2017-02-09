@@ -3,6 +3,14 @@
     padding: 15px;
   }
 }
+
+.prompt-text {
+  padding: 5px 0;
+  color: red;
+  font-size: 13px;
+  text-align: center;
+}
+
 input.file-window[type='file']{
   display: none;
 }
@@ -27,7 +35,7 @@ input.file-window[type='file']{
 }
 
 .survey-btn {
-  padding: 10px 2px;
+  padding: 10px 4px;
 }
 
 .light-gray-color {
