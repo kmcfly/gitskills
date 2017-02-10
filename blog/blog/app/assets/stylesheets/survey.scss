@@ -1,0 +1,92 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  background: #a8dcf9 image-url('Commonbg.jpg') no-repeat fixed top center;
+  font-size: 16px;
+
+  .survey-wrap {
+    margin: 70px auto 0px !important;
+    padding-top: 0px;
+
+    .contain {
+      background: white no-repeat;
+      width: 920px;
+      margin: 0 auto;
+
+      .survey {
+        width: 780px;
+        line-height: 20px;
+        word-wrap: break-word;
+        padding: 0;
+        margin: 0 auto;
+      }
+
+      .surveyhead {
+        line-height: 20px;
+        text-align: center;
+        width: 96%;
+        padding: 40px 2% 30px;
+      }
+
+      .surveyhead h1 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #3aa4e5;
+      }
+
+      .description {
+        color: #555555;
+        line-height: 24px;
+        text-align: left;
+        font-size: 16px;
+        padding-bottom: 15px;
+        border-bottom: 1px dashed #ccc;
+        margin-left: 0;
+        margin-top: 20px;
+      }
+
+      .surveycontent {
+        margin: 0;
+        width: 100%;
+
+        .bank-name {
+          padding-top: 2px;
+          font-size: 15px;
+          color: #444444;
+          font-weight: bold;
+          height: auto;
+          line-height: 20px;
+        }
+      }
+
+      .surveyfooter {
+        padding: 20px 0;
+      }
+      .form-group {
+        padding: 20px 0 50px 0;
+        clear: both;
+        padding-top: 5px;
+        padding-left: 24px;
+        padding-bottom: 2px;
+        font-size: 15px;
+        color: #333333;
+        width: 100%;
+      }
+      .form-group.padding-lg {
+        border-bottom: 1px solid #EFEFEF;
+        ol {
+          li {
+            margin-left: 24px;
+            word-wrap: break-word;
+            line-height: 30px;
+          }
+        }
+      }
+
+      .padding-lg {
+        padding: 20px 0 50px 0;
+      }
+    }
+  }
+}

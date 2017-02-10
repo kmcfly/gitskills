@@ -1,0 +1,85 @@
+body {
+  color: #444;
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-weight: 300;
+  line-height: 1.4em;
+}
+
+.main-example {
+  margin: 0 auto;
+  width: 355px;
+}
+.main-example .countdown-container {
+  height: 130px;
+	font-size: 20px;
+}
+.main-example span.symbol {
+	top: 200px;
+	right: 10px;
+	font-size: 90px;
+  color: #202020;
+	top: -15px;
+	display: inline-block;
+	position: relative;
+	&:last-child {
+		display: none;
+	}
+}
+.main-example .time {
+right: 5px;
+border-radius: 5px;
+box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+display: inline-block;
+text-align: center;
+position: relative;
+margin-right: 10px;
+height: 95px;
+width: 65px;
+}
+.main-example .count {
+background: #202020;
+color: #f8f8f8;
+display: block;
+font-family: 'Oswald', sans-serif;
+font-size: 2em;
+line-height: 2.4em;
+overflow: hidden;
+position: absolute;
+text-align: center;
+text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+top: 0;
+width: 100%;
+}
+.main-example .count.top {
+border-top: 1px solid rgba(255,255,255,0.2);
+border-bottom: 1px solid rgba(255,255,255,0.1);
+border-radius: 5px;
+}
+.main-example .label {
+font-size: normal;
+margin-top: 5px;
+display: block;
+position: absolute;
+top: 95px;
+width: 100%;
+}
+@media screen and (max-width: 48em) {
+.main-example {
+  width: 100%;
+}
+.main-example .countdown-container {
+  height: 100px;
+}
+.main-example .time {
+    height: 70px;
+    width: 48px;
+}
+.main-example .count {
+  font-size: 1.5em;
+  line-height: 70px;
+}
+.main-example .label {
+  font-size: 0.8em;
+  top: 72px;
+}
+}

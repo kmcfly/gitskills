@@ -1,0 +1,85 @@
+.examination-form {
+  .help-block {
+    color: red;
+  }
+}
+.rule_wrap {
+  .form-control.margin-15 {
+    margin: 0 15px;
+  }
+  .margin-5 {
+    margin: 0 5px;
+  }
+
+  .width-50 {
+    width: 50px;
+  }
+}
+.form-group {
+  ul.form.list-unstyled {
+    max-width: 60%;
+    padding-left: 40px;
+    li {
+      word-wrap: break-word;
+    }
+  }
+}
+.question_bank_form_wrap, .question_bank_wrap {
+  .bank-name {
+    padding-left: 10px;
+  }
+
+  .header-desc {
+    color: red;
+    font-size: 15px;
+  }
+}
+
+.btn-submit {
+  input {
+    width: 33%;
+  }
+}
+
+.button_content {
+  margin: 50px 0 100px 0;
+}
+
+.preview-wrap {
+  .answer-sheet {
+    float: right;
+    position: fixed;
+    width: 302px;
+    top: 200px;
+
+    ul {
+      list-style: none;
+      margin-top: 5px;
+      padding-left: 0px;
+      li {
+        margin: 8px 4px 0 4px;
+        display: inline-block;
+      }
+
+      li.badge-no.done {
+        background: #1E90FF;
+        color: white;
+      }
+      li.badge-no {
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        color: white;
+        text-decoration: none;
+        color: black;
+        background: #E0E0E0;
+        border-radius: 10px;
+
+        a {
+          color: black;
+        }
+      }
+    }
+  }
+}

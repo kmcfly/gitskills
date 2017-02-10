@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get 'student/index'
   resources :students, only: [:create] do
     collection do
-      post :evaluation
+      get :evaluation
     end
   end
   get 'login/index'

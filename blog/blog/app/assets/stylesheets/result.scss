@@ -1,0 +1,54 @@
+.result-index-wrap {
+  .name {
+    font-weight: 600;
+    padding-right: 8px;
+  }
+}
+
+.right-wrap {
+  width: 302px;
+  margin-top: 80px;
+  position: fixed;
+  .panel-heading {
+    color: #babab6;
+    line-height: 50px;
+    font-size: 25px;
+  }
+  .dl-horizontal {
+    dd {
+      margin-left: 115px;
+    }
+    dt {
+      width: 95px;
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin-top: 5px;
+    padding-left: 0px;
+    li {
+      margin: 8px 4px 0 4px;
+      display: inline-block;
+    }
+
+    li.badge-no.done {
+      background: #1E90FF;
+      color: white;
+    }
+    li.badge-no {
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      line-height: 20px;
+      color: white;
+      text-decoration: none;
+      color: black;
+      background: #E0E0E0;
+      border-radius: 10px;
+      a {
+        color: black;
+      }
+    }
+  }
+}

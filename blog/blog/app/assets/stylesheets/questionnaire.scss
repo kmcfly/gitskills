@@ -1,0 +1,25 @@
+.questionnaire_question_banks {
+  label.check_boxes {
+    display: block;
+  }
+}
+
+.question_banks_wrap.form-group {
+  ul.form.list-unstyled {
+    max-width: 60%;
+    padding-left: 40px;
+    li {
+      word-wrap: break-word;
+    }
+  }
+  .search {
+    margin: 20px 10px 0 10px;
+  }
+
+  label.select_all{
+    margin-bottom: 10px;
+  }
+  p.bg-info {
+    padding: 10px;
+  }
+}
