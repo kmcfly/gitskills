@@ -18,18 +18,24 @@
       padding: 0 5px;
       text-align: center;
     }
+    .video_info {
+        background-color: #eee;
+        text-align: center;
+    }
     .video-js {
-      margin: 40px auto;
+      margin: 10px auto;
     }
   </style>
 </head>
+
+
 <body>
   <div class="info">
-    <p>
-      Set sources dynamically
-    </p>
+      <p>Set sources dynamically</p>
   </div>
-
+  <div class="video_info">
+      <p>#第一弹# dji飞行的奥秘</p>
+  </div>
   <video id='video' class="video-js vjs-default-skin"></video>
 
   <div class="info">
@@ -37,7 +43,9 @@
       Set sources inside <code>&ltvideo&gt</code> tag
     </p>
   </div>
-
+  <div class="video_info">
+      <p>#第二弹# dji 图传的秘密计划</p>
+  </div>
   <video id="video_1" class="video-js vjs-default-skin" width="500" controls data-setup='{}' muted>
     <source src="https://vjs.zencdn.net/v/oceans.mp4?480" type='video/mp4' label='SD' res='480' />
     <source src="https://vjs.zencdn.net/v/oceans.mp4?1080" type='video/mp4' label='HD' res='1080'/>
