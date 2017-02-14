@@ -7,7 +7,6 @@
   <link href="/node_modules/video.js/dist/video-js.css" rel="stylesheet">
   <link href="/node_modules/videojs-resolution-switcher/lib/videojs-resolution-switcher.css" rel="stylesheet">
   <style>
-
   </style>
 </head>
 
@@ -86,50 +85,48 @@
   <script src="/node_modules/videojs-resolution-switcher/lib/videojs-resolution-switcher.js"></script>
 
   <% @micro_video_ids.each_index do  |i| %>
-  <div class="video_info"><p>#第一弹# dji飞行的奥秘</p></div>
-  <video id= <%= @micro_video_ids[i] %>  class="video-js vjs-default-skin"></video>
-
-<!-- <video id='video' class="video-js vjs-default-skin"></video> -->
-  <div class="info"><p>Set sources inside <code>&ltvideo&gt</code> tag</p></div>
-  <script>
-    //#alert(<%= @micro_video_ids[i].to_s %>);
-      videojs(<%= @micro_video_ids[i] %>, {
-            controls: true,
-            muted: true,
-            width: 500,
-            //height: 500,
-            poster: "/video_0_bgd.jpg",
-            plugins: {
-              videoJsResolutionSwitcher: {
-                default: 'low', // Default resolution [{Number}, 'low', 'high'],
-                dynamicLabel: true // Display dynamic labels or gear symbol
+    <div class="video_info"><p>#第一弹# dji飞行的奥秘</p></div>
+    <video id= <%= @micro_video_ids[i]%>   class="video-js vjs-default-skin"></video>
+    <div class="info"><p>Set sources inside <code>&ltvideo&gt</code> tag</p></div>
+    <script>
+      //#alert(<%= @micro_video_ids[i].to_s %>);
+        videojs(<%= @micro_video_ids[i] %>, {
+              controls: true,
+              muted: true,
+              width: 500,
+              //height: 500,
+              poster: "/video_0_bgd.jpg",
+              plugins: {
+                videoJsResolutionSwitcher: {
+                  default: 'low', // Default resolution [{Number}, 'low', 'high'],
+                  dynamicLabel: true // Display dynamic labels or gear symbol
+                }
               }
-            }
-          },
-          function () {
-            var player = this;
-            window.player = player
-            player.updateSrc([
-              {
-                src: 'https://vjs.zencdn.net/v/oceans.mp4?sd',
-                type: 'video/mp4',
-                label: 'SD',
-                res: 360
-              },
-              {
-                src: 'https://vjs.zencdn.net/v/oceans.mp4?hd',
-                type: 'video/mp4',
-                label: 'HD',
-                res: 720
-              }
-            ])
+            },
+            function () {
+              var player = this;
+              window.player = player
+              player.updateSrc([
+                {
+                  src: 'https://vjs.zencdn.net/v/oceans.mp4?sd',
+                  type: 'video/mp4',
+                  label: 'SD',
+                  res: 360
+                },
+                {
+                  src: 'https://vjs.zencdn.net/v/oceans.mp4?hd',
+                  type: 'video/mp4',
+                  label: 'HD',
+                  res: 720
+                }
+              ])
 
-            player.on('resolutionchange', function () {
-              console.info('Source changed to %s', player.src())
+              player.on('resolutionchange', function () {
+                console.info('Source changed to %s', player.src())
+              })
+
             })
-
-          })
-  </script>
+    </script>
   <% end %>
   <!-- <script>videojs('video_1').videoJsResolutionSwitcher()</script> -->
 
