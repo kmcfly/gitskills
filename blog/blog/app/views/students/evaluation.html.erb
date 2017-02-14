@@ -85,15 +85,15 @@
   <script>    videojs.options.flash.swf = "/node_modules/video.js/dist/video-js.swf"</script>
   <script src="/node_modules/videojs-resolution-switcher/lib/videojs-resolution-switcher.js"></script>
 
-  <% for i in 0..0 %>
+  <% @micro_video_ids.each do |mvideo| %>
   <div class="video_info"><p>#第一弹# dji飞行的奥秘</p></div>
-  <video id="0" class="video-js vjs-default-skin"></video>
+  <video id= <%= mvideo %>  class="video-js vjs-default-skin"></video>
 
 <!-- <video id='video' class="video-js vjs-default-skin"></video> -->
   <div class="info"><p>Set sources inside <code>&ltvideo&gt</code> tag</p></div>
   <script>
-    alert("");
-      videojs("0", {
+    alert(<%= mvideo %>);
+      videojs(<%= mvideo %>, {
             controls: true,
             muted: true,
             width: 500,
