@@ -37,11 +37,171 @@
         line-height: 1.3846em;
         margin-left: 1em;
     }
+
+    #header {
+        background: #c52f24 url(../images/header_tile.gif) repeat-x;
+        color: #FFF;
+        padding: 1.5em 0;
+        z-index: 99;
+    }
+
+    #feature {
+        background: #d5e9f6 url(../images/feature_tile.gif) repeat-x;
+        color: #333;
+        padding: 0.5em 0 1.5em;
+    }
+
+    #container {
+        color: #333;
+        padding: 0.5em 0 1.5em 0;
+    }
+
+    #mainCol {
+        max-width: 630px;
+        margin-left: 2em;
+    }
+    .wrapper {
+        text-align: left;
+        margin: 0 auto;
+        max-width: 960px;
+        padding: 0 1em;
+    }
+
+    .red-button {
+        display: inline-block;
+        border-top: 1px solid rgba(255,255,255,.5);
+        background: #751913;
+        background: -webkit-gradient(linear, left top, left bottom, from(#c52f24), to(#751913));
+        background: -webkit-linear-gradient(top, #c52f24, #751913);
+        background: -moz-linear-gradient(top, #c52f24, #751913);
+        background: -ms-linear-gradient(top, #c52f24, #751913);
+        background: -o-linear-gradient(top, #c52f24, #751913);
+        padding: 9px 18px;
+        -webkit-border-radius: 11px;
+        -moz-border-radius: 11px;
+        border-radius: 11px;
+        -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+        -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+        box-shadow: rgba(0,0,0,1) 0 1px 0;
+        text-shadow: rgba(0,0,0,.4) 0 1px 0;
+        color: white;
+        font-size: 15px;
+        font-family: Helvetica, Arial, Sans-Serif;
+        text-decoration: none;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    .red-button:active {
+        border-top: none;
+        padding-top: 10px;
+        background: -webkit-gradient(linear, left top, left bottom, from(#751913), to(#c52f24));
+        background: -webkit-linear-gradient(top, #751913, #c52f24);
+        background: -moz-linear-gradient(top, #751913, #c52f24);
+        background: -ms-linear-gradient(top, #751913, #c52f24);
+        background: -o-linear-gradient(top, #751913, #c52f24);
+    }
+
+    .s-hidden {
+        display: none;
+    }
+
+    @media screen and (min-width: 1025px) {
+        .more-info-button {
+            display: none;
+        }
+        .more-info-links {
+            list-style: none;
+            display: inline;
+            margin: 0;
+        }
+
+        .more-info {
+            display: inline-block;
+        }
+        .more-info:after {
+            content: " |";
+        }
+
+        .more-info:last-child:after {
+            content: "";
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        #topNav .wrapper { text-align: center; }
+        .more-info-button {
+            position: relative;
+            z-index: 25;
+        }
+
+        .more-info-label {
+            display: none;
+        }
+
+        .more-info-container {
+            position: absolute;
+            top: .5em;
+            z-index: 20;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            width: 20em;
+        }
+
+        .more-info-links {
+            display: block;
+            list-style: none;
+            background-color: #c52f24;
+            border-radius: 5px;
+            padding-top: 5.25em;
+            border: 1px #980905 solid;
+        }
+        .more-info-links.s-hidden {
+            display: none;
+        }
+        .more-info {
+            padding: .75em;
+            border-top: 1px #980905 solid;
+        }
+        .more-info a, .more-info a:link, .more-info a:visited {
+            display: block;
+            color: white;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
+    a, a:link, a:visited {
+        color: #ee3f3f;
+        text-decoration: underline;
+    }
+
   </style>
 </head>
 
 
 <body>
+
+<div id="topNav">
+    <div class="wrapper">
+        <strong class="more-info-label">更多内容 <a href="http://rubyonrails.org/">rubyonrails.org:</a> </strong>
+        <span class="red-button more-info-button">
+        更多内容
+      </span>
+        <ul class="more-info-links s-hidden">
+            <li class="more-info"><a href="http://rubyonrails.org/">综览</a></li>
+            <li class="more-info"><a href="http://rubyonrails.org/download">下载</a></li>
+            <li class="more-info"><a href="http://rubyonrails.org/deploy">部署</a></li>
+            <li class="more-info"><a href="https://github.com/rails/rails">源码</a></li>
+            <li class="more-info"><a href="http://rubyonrails.org/screencasts">视频</a></li>
+            <li class="more-info"><a href="http://rubyonrails.org/documentation">文件</a></li>
+            <li class="more-info"><a href="http://rubyonrails.org/community">社群</a></li>
+            <li class="more-info"><a href="http://weblog.rubyonrails.org/">Blog</a></li>
+        </ul>
+    </div>
+</div>
+
 <div id="subCol">
     <h3 class="chapter"><img src="images/chapters_icon.gif" alt="">Chapters</h3>
     <ol class="chapters">
